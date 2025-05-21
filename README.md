@@ -63,6 +63,16 @@ WhatsApp_Clone/
 
 Contributions are welcome! If you find bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
+## 👨‍💻 Author
+
+Made with 💙 by [Ayush Kumar](https://github.com/9A-Ayush)
+
+- 💼 LinkedIn: [@ayush-kumar-849a1324b](https://www.linkedin.com/in/ayush-kumar-849a1324b)
+- 🌐 GitHub: [@9A-Ayush](https://github.com/9A-Ayush)
+- 📸 Instagram: [@ayush_ix_xi](https://www.instagram.com/ayush_ix_xi)
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
