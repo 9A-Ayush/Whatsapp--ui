@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.whatapp"  // Your package name
+    compileSdk = flutter.compileSdkVersion  // From Flutter setup
+    ndkVersion = flutter.ndkVersion  // From Flutter setup
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.whatapp"  // Unique Application ID
+        minSdk = flutter.minSdkVersion  // From Flutter setup
+        targetSdk = flutter.targetSdkVersion  // From Flutter setup
+        versionCode = flutter.versionCode  // From Flutter setup
+        versionName = flutter.versionName  // From Flutter setup
+    }
+
+    buildTypes {
+        release {
+            // Add signing config for the release build
+            signingConfig = signingConfigs.debug  // You can specify your signing config here
+        }
+    }
+
+    buildFeatures {
+        viewBinding true  // Enable ViewBinding if needed (optional)
+    }
+}
+
+flutter {
+    source = "../.."  // Path to Flutter source directory
+}
+
+dependencies {
+    // Use the latest appcompat library for compatibility
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+
+    // ConstraintLayout for better layout design
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+
+    // Add other dependencies here as needed
+}
